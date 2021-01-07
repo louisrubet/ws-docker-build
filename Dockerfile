@@ -16,5 +16,4 @@ RUN groupadd -g 1000 louis && useradd -m -u 1000 -g 1000 louis
 RUN mkdir -p /var/yocto-cache/sstate-cache && chown -R louis:louis /var/yocto-cache
 
 #
-CMD chsh -s $(which bash)
-CMD /home/louis/Development/ws-yocto/docker/docker_shell.sh
+CMD /home/louis/Development/ws-yocto/ws-docker-build/docker_shell.sh
